@@ -18,6 +18,8 @@ CREATE TABLE IF NOT EXISTS `user_traffic_log_trojan`(
 ```text
 ALTER TABLE
     `user` ADD `password` TEXT NULL DEFAULT NULL COMMENT 'trojan 密码' AFTER `passwd`;
+ALTER TABLE `user`
+	ADD COLUMN `uuid` TEXT NULL DEFAULT NULL COMMENT 'uuid' AFTER `passwd`; 
 ```
 
 

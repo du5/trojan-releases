@@ -12,11 +12,14 @@ description: 此页面仅介绍本项目需要的配置项目
 | node\_class | 必填，允许连接的用户等级 |
 | node\_group | 必填，允许连接的用户分组 |
 | run\_type | 固定 `server` |
-| mysql.enabled | 固定 `true` |
-| mysql.server\_addr | 必填，面板数据库 IP 地址 |
-| mysql.server\_port | 必填，数据库端口 |
-| mysql.database | 必填，数据库名称 |
-| mysql.username | 必填，数据库用户名 |
+| webapi.enabled | true\|false |
+| webapi.host | 选填，面板API对接地址 |
+| webapi.token | 选填，token |
+| mysql.enabled | true\|false |
+| mysql.server\_addr | 选填，面板数据库 IP 地址 |
+| mysql.server\_port | 选填，数据库端口 |
+| mysql.database | 选填，数据库名称 |
+| mysql.username | 选填，数据库用户名 |
 | mysql.password | 选填，数据库密码 |
 | mysql.cafile | 选填，数据库连接密钥 |
 
@@ -36,6 +39,11 @@ description: 此页面仅介绍本项目需要的配置项目
         "password1",
         "password2"
     ],
+    "webapi": {
+        "enabled": false,
+        "host": "https://baidu.com",
+        "token": "114514"
+    },
     "log_level": 1,
     "ssl": {
         "cert": "/path/to/certificate.crt",
