@@ -9,8 +9,8 @@ description: 此页面仅介绍本项目需要的配置项目
 | 配置名称 | 简介 |
 | :--- | :--- |
 | node\_id | 必填，节点 ID，错误的 ID 可能导致节点流量无法结算 |
-| node\_class | 必填，允许连接的用户等级 |
-| node\_group | 必填，允许连接的用户分组 |
+| node\_class | 选填，允许连接的用户等级\(MYSQL对接必填 |
+| node\_group | 选填，允许连接的用户分组\(MYSQL对接必填 |
 | run\_type | 固定 `server` |
 | webapi.enabled | true\|false |
 | webapi.host | 选填，面板API对接地址 |
