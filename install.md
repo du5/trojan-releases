@@ -8,6 +8,29 @@
 https://github.com/du5/trojan-releases/releases
 ```
 
+守护进程
+
+```text
+cat <<EOF > /lib/systemd/system/trojan.service
+[Unit]
+Description=trojan
+After=network.target
+[Service]
+ExecStart=$PWD/trojan -c $PWD/config.json
+WorkingDirectory=$PWD
+Restart=always
+LimitNOFILE=512000
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+添加自启动
+
+```text
+systemctl enable trojan
+```
+
 {% hint style="info" %}
  如果你想通过 Docker 运行可以自己通过二进制文件构建或者使用 gtary/trojan 库
 {% endhint %}
