@@ -4,16 +4,15 @@ description: 使用此项目前需要修改SSP面板的地方
 
 # 面板的修改
 
-### 源代码：
+Anankke 库已经完美兼容 MYSQL/WEBAPI [https://github.com/Anankke/SSPanel-Uim](https://github.com/Anankke/SSPanel-Uim)
 
-* [SSPanel-Uim](https://github.com/Anankke/SSPanel-Uim): [https://github.com/du5/SSPanel-Uim-Trojan/commit/042ec0d](https://github.com/du5/SSPanel-Uim-Trojan/commit/042ec0d)
-* [Malio](https://gitlab.com/masivro/malio-theme-for-sspanel): [https://gitlab.com/Gtary/malio-theme-for-sspanel/-/commit/22168a26](https://gitlab.com/Gtary/malio-theme-for-sspanel/-/commit/22168a26)
+Malio 库 PR 已经在本地了
 
 {% hint style="warning" %}
-修改内容请自行比对，远程协助比对安装请额外支付 30 USDT
+如果使用面板以上未提及修改内容请自行比对，远程协助比对安装请额外支付 30 USDT
 {% endhint %}
 
-### 节点编辑
+## 节点编辑
 
 Server 格式: google.com;port=1443\|host=baidu.com
 
@@ -23,9 +22,9 @@ Server 格式: google.com;port=1443\|host=baidu.com
 >
 > baidu.com 改为你的 trojan 服务器证书 peer/sni 证书名
 
-### 计划任务
+## 计划任务
 
 ```bash
-*/1 * * * * php checkjob > /dev/null
+*/1 * * * * php xcat checkjob > /dev/null
 ```
 
