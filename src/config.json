@@ -1,0 +1,53 @@
+{
+    "node_id": "B_ID",
+    "node_class":"B_CLASS",
+    "node_group":"B_GROUP",
+    "synctime": B_SYNC,
+    "run_type": "server",
+    "local_addr": "B_L_ADDR",
+    "local_port": B_L_PORT,
+    "remote_addr": "B_R_ADDR",
+    "remote_port": B_R_PORT,
+    "password": [
+
+    ],
+    "webapi": {
+        "enabled": B_WEBAPI_ENABLE,
+        "host": "B_WEBAPI_HOST",
+        "token": "B_WEBAPI_TOKEN"
+    },
+    "mysql": {
+        "enabled": B_MYSQL_ENABLE,
+        "server_addr": "B_MYSQL_ADDR",
+        "server_port": B_MYSQL_PORT,
+        "database": "B_MYSQL_DB",
+        "username": "B_MYSQL_USER",
+        "password": "B_MYSQL_PWD",
+        "cafile": "B_MYSQL_CA"
+    },
+    "log_level": 3,
+    "ssl": {
+        "cert": "B_SSL_CERT",
+        "key": "B_SSL_KEY",
+        "key_password": "B_SSL_PWD",
+        "cipher": "",
+        "cipher_tls13": "",
+        "prefer_server_cipher": true,
+        "alpn": [],
+        "alpn_port_override": {},
+        "reuse_session": false,
+        "session_ticket": false,
+        "session_timeout": 600,
+        "plain_http_response": "",
+        "curves": "",
+        "dhparam": ""
+    },
+    "tcp": {
+        "prefer_ipv4": false,
+        "no_delay": true,
+        "keep_alive": true,
+        "reuse_port": false,
+        "fast_open": false,
+        "fast_open_qlen": 20
+    }
+}
